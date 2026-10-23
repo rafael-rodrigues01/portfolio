@@ -1,0 +1,44 @@
+# Dependências
+node_modules
+.pnp
+.pnp.js
+
+# Build e compilação
+dist
+dist-ssr
+build
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variáveis de ambiente e segredos locais
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Cobertura de testes e relatórios do Vitest
+coverage
+.nyc_output
+
+# Configurações de editores e SO
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Histórico / caches locais de agentes de IA (se aplicável)
+.claude/
