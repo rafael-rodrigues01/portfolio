@@ -1,42 +1,45 @@
 # Spec 01: Seção Principal (HeroSection)
 
+**Status:** Concluído (Testes passando)
+
 ## 1. Objetivo
-Apresentar o profissional logo no topo da página (Hero), estabelecendo a primeira impressão com apresentação clara de identidade (nome, cargo e bio resumida), canais de redes sociais e chamadas para ação principais direcionando o usuário para as seções de projetos e contato.
+Apresentar o profissional no topo da página (Hero), estabelecendo a primeira impressão através de identificação clara (nome, cargo e bio resumida), canais de redes sociais e chamadas para ação (CTAs) que direcionem o usuário para as seções de projetos e contato.
 
 ## 2. Contratos & Tipos
-- Utiliza a tipagem [`ProfileInfo`](file:///C:/dev/projects/Portfolio-rafael/src/types/index.ts) definida em `src/types/index.ts`.
-- Fonte de dados única: [`profileData`](file:///C:/dev/projects/Portfolio-rafael/src/data/profile.ts) importada de `src/data/profile.ts`.
+- **Tipagem:** [`ProfileInfo`](file:///C:/dev/projects/Portfolio-rafael/src/types/index.ts) definida em `src/types/index.ts`.
+- **Fonte de Dados:** [`profileData`](file:///C:/dev/projects/Portfolio-rafael/src/data/profile.ts) importada de `src/data/profile.ts`.
 
 ## 3. Requisitos Funcionais
-- [ ] Renderizar o nome do profissional em destaque através de uma tag semântica `<h1>`.
-- [ ] Exibir o cargo / especialidade profissional.
-- [ ] Exibir a biografia resumida.
-- [ ] Renderizar botões / links de chamada para ação (CTA):
-  - Botão "Ver Projetos" apontando para a âncora `#projects`.
-  - Botão "Contato" apontando para a âncora `#contact` (ou link de e-mail/contato conforme configurado).
-- [ ] Renderizar links das redes sociais a partir de `profileData.socialLinks`:
+- [x] Exibir o nome do profissional em destaque através de uma tag semântica `<h1>` utilizando `profileData.name`.
+- [x] Exibir o cargo / especialidade profissional utilizando `profileData.role`.
+- [x] Exibir a biografia resumida utilizando `profileData.bio`.
+- [x] Renderizar botões de Chamada para Ação (CTA):
+  - Botão / link **"Ver Projetos"** direcionando para a âncora `#projects`.
+  - Botão / link **"Contato"** direcionando para a âncora `#contact`.
+- [x] Renderizar links acessíveis para as redes sociais a partir de `profileData.socialLinks`:
   - GitHub (`socialLinks.github`)
   - LinkedIn (`socialLinks.linkedin`)
-  - E-mail (`socialLinks.email`, com prefixo `mailto:` ou link direto correspondente)
+  - E-mail (`socialLinks.email`) com link `mailto:`
 
 ## 4. Requisitos Não-Funcionais, Layout & Acessibilidade (a11y)
-- **Acessibilidade:**
-  - O título principal deve usar a tag semântica `<h1>`.
-  - Links externos para redes sociais devem conter `target="_blank"`, `rel="noreferrer noopener"` e atributo `aria-label` descritivo (ex.: `"Acessar perfil no GitHub de [Nome]"` e `"Acessar perfil no LinkedIn de [Nome]"`).
-  - O link de e-mail deve possuir `aria-label="Enviar e-mail para [Nome]"`.
-  - Botões/links de ação rápida devem ter textos explícitos ou atributos acessíveis.
+- **Acessibilidade (a11y):**
+  - Título principal estruturado com elemento semântico `<h1>`.
+  - Links externos para redes sociais devem conter `target="_blank"`, `rel="noreferrer noopener"` e atributos `aria-label` descritivos (ex.: `"Perfil do GitHub"`, `"Perfil do LinkedIn"`).
+  - Link de e-mail deve possuir `aria-label="Enviar e-mail"` e esquema de URL `mailto:`.
+  - Links/botões de CTA com textos claros e foco visual navegável por teclado.
 - **Responsividade & Tailwind CSS:**
-  - Layout adaptável: alinhamento centralizado ou limpo em telas menores (mobile) e espaçamento/alinhamento fluido em telas maiores (`md:`, `lg:`).
-  - Utilização de classes utilitárias modernas do Tailwind CSS v4 sem valores fixos arbitrários que quebrem o viewport.
+  - Layout mobile-first, com alinhamento e espaçamentos fluidos para dispositivos móveis e desktops (`sm:`, `md:`, `lg:`).
+  - Utilização de classes utilitárias do Tailwind CSS v4, mantendo estilo limpo e alta legibilidade.
 
-## 5. Critérios de Aceite (Testes Obrigatórios com Vitest & RTL)
+## 5. Critérios de Aceite (Definição para Vitest & React Testing Library)
 1. **Renderização de Dados:**
-   - Deve renderizar com sucesso o nome contido em `profileData.name` dentro de um heading de nível 1 (`<h1>`).
-   - Deve exibir o cargo (`profileData.role`) e o resumo da bio (`profileData.bio`).
-2. **Ações de Navegação (CTAs):**
-   - Deve conter um link/botão "Ver Projetos" com `href="#projects"`.
-   - Deve conter um link/botão "Contato" com `href="#contact"` (ou link correspondente da seção de contato).
+   - Deve renderizar o nome definido em `profileData.name` dentro de uma tag `<h1>`.
+   - Deve renderizar o texto correspondente a `profileData.role`.
+   - Deve renderizar o texto correspondente a `profileData.bio`.
+2. **Botões de Ação (CTAs):**
+   - Deve renderizar um link com texto legível "Ver Projetos" e atributo `href="#projects"`.
+   - Deve renderizar um link com texto legível "Contato" e atributo `href="#contact"`.
 3. **Links Sociais e Acessibilidade:**
-   - Deve renderizar os links de GitHub e LinkedIn com suas respectivas URLs configuradas em `profileData.socialLinks`.
-   - Links externos devem possuir `target="_blank"`, `rel="noreferrer noopener"` e atributo `aria-label` descritivo para leitores de tela.
-   - Deve renderizar o link de e-mail com prefixo `mailto:` apontando para o e-mail cadastrado.
+   - Deve renderizar o link para o GitHub com o atributo `href` igual a `profileData.socialLinks.github`, contendo `target="_blank"`, `rel="noreferrer noopener"` e `aria-label`.
+   - Deve renderizar o link para o LinkedIn com o atributo `href` igual a `profileData.socialLinks.linkedin`, contendo `target="_blank"`, `rel="noreferrer noopener"` e `aria-label`.
+   - Deve renderizar o link de e-mail com o atributo `href` igual a `mailto:${profileData.socialLinks.email}` e `aria-label`.

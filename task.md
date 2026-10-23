@@ -1,13 +1,13 @@
-Consulte o nosso AGENTS.md. Vamos iniciar a primeira entrega do portfólio seguindo o SDD (Spec-Driven Development).
+Os testes falharam conforme esperado na fase RED do TDD. Agora vamos para a fase GREEN:
 
-Redija o arquivo specs/01-hero-section.md para a HeroSection (seção principal/topo). A seção deve atender a estes pontos:
+Consulte a spec specs/01-hero-section.md e crie o componente em src/sections/HeroSection.tsx.
 
-Consumir nome, cargo, bio resumida e links sociais de src/data/profile.ts.
+Consuma os dados de src/data/profile.ts sem valores chumbados no JSX.
 
-Exibir um título de destaque (H1) acessível e uma chamada para ação (botão para 'Ver Projetos' e botão para 'Contato').
+Aplique estilos modernos e responsivos com Tailwind CSS.
 
-Ter layout responsivo com Tailwind CSS (alinhamento limpo no mobile e desktop).
+Respeite todas as regras de acessibilidade (a11y) descritas na spec.
 
-Definir 'Critérios de Aceite' claros para que possamos escrever os testes em Vitest no próximo passo.
+Execute novamente npm test -- --run para garantir que 100% dos testes passem em verde.
 
-Apenas crie o arquivo da spec. Não crie componentes nem testes por enquanto.
+Ao final, atualize o status da spec em specs/01-hero-section.md para Status: Concluído (Testes passando).
