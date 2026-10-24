@@ -1,29 +1,29 @@
-A Spec 03 está totalmente concluída e commitada. Seguindo o fluxo de SDD e as diretrizes do AGENTS.md:
+Os testes da Spec 05 falharam pelo motivo correto na fase RED. Agora vamos para a fase GREEN de implementação e integração:
 
-Redija o arquivo specs/04-contact-section.md para a ContactSection (âncora #contact) e rodapé (footer). A especificação deve cobrir:
+Consulte specs/05-navbar-component.md e as diretrizes do AGENTS.md.
 
-Consumo dos links sociais e dados de contato a partir de src/data/profile.ts (socialLinks, name e role).
+Crie o componente src/components/Navbar.tsx:
 
-Container semântico <section id="contact" aria-label="Contato"> com heading <h2> acessível.
+Envolvido em <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#141321]/80 border-b border-[#27253d] transition-all">.
 
-Canais de contato direto:
+Contendo elemento semântico <nav aria-label="Navegação principal"> com container centralizado (max-w-4xl mx-auto px-6 h-16 flex items-center justify-between).
 
-Botão/card de destaque com link mailto: para envio de e-mail e aria-label descritivo.
+Identificação à esquerda com link para o topo (href="#" ou href="#hero"), exibindo o nome de profileData.name ou inicial/logo, com text-[#f0efff] font-bold tracking-tight hover:text-[#fe428e].
 
-Links externos para perfis profissionais (LinkedIn, GitHub) com target="_blank", rel="noreferrer noopener" e rótulos acessíveis.
+Lista de links à direita em flex items-center gap-6:
 
-Rodapé semântico (<footer>):
+Link 'Sobre' com href="#about".
 
-Texto de copyright dinâmico ou semântico com o nome do desenvolvedor.
+Link 'Projetos' com href="#projects".
 
-Indicação técnica da stack (React, TypeScript, Tailwind CSS).
+Link 'Contato' com href="#contact".
 
-Design e Paleta Radical:
+Estilos de texto: text-sm font-medium text-[#a9a6c6] hover:text-[#fe428e] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e].
 
-Container alinhado com max-w-4xl mx-auto px-6 py-20 md:py-28.
+Integre o componente no topo do arquivo src/App.tsx, posicionando <Navbar/> imediatamente antes de <HeroSection/> dentro do container principal.
 
-Card de destaque em bg-[#1a1829] border border-[#27253d] rounded-xl p-8.
+Execute npm test -- --run para garantir que todas as suítes (Specs 01 a 05) passem 100% em verde.
 
-Botão de e-mail com destaque em magenta (bg-[#fe428e]).
+Atualize o cabeçalho de specs/05-navbar-component.md para **Status:** Concluído (Testes passando).
 
-Critérios de Aceite para Vitest e React Testing Library cobrindo semântica, acessibilidade de links externos e funcionamento do esquema mailto:
+Execute npm run build para certificar que o build de produção do Vite compila perfeitamente sem falhas de tipo.

@@ -2,7 +2,7 @@ import type { ProfileInfo, Project } from '../types'
 
 export const profileData: ProfileInfo = {
   name: 'Rafael Rodrigues',
-  role: 'Desenvolvedor Frontend / Full Stack',
+  role: 'Desenvolvedor Full Stack',
   bio: 'Construindo aplicações web modernas, acessíveis e escaláveis com foco em engenharia limpa.',
   location: 'Brasil',
   socialLinks: {
