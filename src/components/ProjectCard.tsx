@@ -9,13 +9,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { title, description, tags, githubUrl, liveUrl } = project
 
   return (
-    <article className="flex flex-col justify-between rounded-xl border border-[#27253d] bg-[#1a1829] p-6 shadow-lg shadow-black/20 transition-all duration-300 hover:border-[#fe428e]/50">
+    <article className="flex flex-col justify-between rounded-xl border border-[#333333] bg-[#222222] p-6 shadow-lg shadow-black/20 transition-all duration-300 hover:border-[#6D83F2]/50">
       <div className="space-y-4">
-        <h3 className="text-xl font-semibold tracking-tight text-[#f0efff]">
+        <h3 className="text-xl font-semibold tracking-tight text-[#F8F8F8]">
           {title}
         </h3>
 
-        <p className="text-sm leading-relaxed text-[#a9a6c6]">
+        <p className="text-sm leading-relaxed text-[#A0A0A0]">
           {description}
         </p>
 
@@ -23,7 +23,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {tags.map((tag) => (
             <li
               key={tag}
-              className="rounded-full border border-[#00e8c6]/20 bg-[#00e8c6]/10 px-2.5 py-1 text-xs font-medium text-[#00e8c6]"
+              className="rounded-full border border-[#6D83F2]/20 bg-[#6D83F2]/10 px-2.5 py-1 text-xs font-medium text-[#6D83F2]"
             >
               {tag}
             </li>
@@ -37,7 +37,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Ver código fonte do projeto ${title}`}
-          className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#141321] px-4 py-2 text-sm font-medium text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+          className="inline-flex items-center justify-center rounded-lg border border-[#333333] bg-[#222222] px-4 py-2 text-sm font-medium text-[#F8F8F8] transition-all duration-200 hover:border-[#6D83F2] hover:text-[#6D83F2] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
         >
           Código Fonte
         </a>
@@ -48,7 +48,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Ver demo ao vivo do projeto ${title}`}
-            className="inline-flex items-center justify-center rounded-lg bg-[#fe428e] px-4 py-2 text-sm font-medium text-white shadow-md shadow-[#fe428e]/20 transition-all duration-200 hover:bg-[#e03178] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg bg-[#6D83F2] px-4 py-2 text-sm font-medium text-white shadow-md shadow-[#6D83F2]/20 transition-all duration-200 hover:bg-[#586ee0] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             Demo ao Vivo
           </a>

@@ -12,21 +12,21 @@ export const AboutSection: React.FC = () => {
     >
       <div className="w-full max-w-4xl mx-auto space-y-8">
         <div className="space-y-3">
-          <p className="text-sm font-medium tracking-widest text-[#fe428e] uppercase">
+          <p className="text-sm font-medium tracking-widest text-[#6D83F2] uppercase">
             Conheça mais
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-[#f0efff] sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#F8F8F8] sm:text-4xl">
             Sobre Mim
           </h2>
         </div>
 
-        <div className="bg-[#1a1829] border border-[#27253d] rounded-xl p-6 md:p-8 space-y-6">
-          <p className="text-base text-[#a9a6c6] leading-relaxed sm:text-lg">
+        <div className="bg-[#222222] border border-[#333333] rounded-xl p-6 md:p-8 space-y-6">
+          <p className="text-base text-[#A0A0A0] leading-relaxed sm:text-lg">
             {aboutBio}
           </p>
 
-          <div className="space-y-4 pt-4 border-t border-[#27253d]">
-            <h3 className="text-xl font-semibold text-[#f0efff]">
+          <div className="space-y-4 pt-4 border-t border-[#333333]">
+            <h3 className="text-xl font-semibold text-[#F8F8F8]">
               Tecnologias & Ferramentas
             </h3>
 
@@ -34,7 +34,7 @@ export const AboutSection: React.FC = () => {
               {skills.map((skill) => (
                 <li
                   key={skill}
-                  className="bg-[#00e8c6]/10 text-[#00e8c6] border border-[#00e8c6]/20 text-xs sm:text-sm px-3 py-1.5 rounded-full font-medium transition-all hover:border-[#00e8c6]/50"
+                  className="bg-[#6D83F2]/10 text-[#6D83F2] border border-[#6D83F2]/20 text-xs sm:text-sm px-3 py-1.5 rounded-full font-medium transition-all hover:border-[#6D83F2]/50"
                 >
                   {skill}
                 </li>

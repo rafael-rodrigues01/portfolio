@@ -32,13 +32,10 @@ src/
 5. **Acessibilidade (a11y):** Botões, links externos e formulários devem conter tags semânticas e atributos `aria-*` adequados.
 6. **Spec-Driven Development (SDD):** Toda implementação deve ser precedida por uma especificação técnica aprovada na pasta `specs/`. O agente deve ler a spec correspondente antes de gerar testes e código, tratando os "Critérios de Aceite" como a definição estrita de conclusão.
 
-## 5. Diretrizes de Design & Paleta (Tema Radical / Anurag Hazra)
-- **Fundo da página:** `bg-[#141321]`
-- **Cards e contêineres:** `bg-[#1a1829] border border-[#27253d]`
-- **Tipografia:** 
-  - Títulos: `text-[#f0efff] font-bold tracking-tight`
-  - Textos de apoio / bio: `text-[#a9a6c6] leading-relaxed`
-- **Acentos e Botões:**
-  - Botão Primário (CTA): `bg-[#fe428e] text-white hover:bg-[#e03178] font-medium shadow-md shadow-[#fe428e]/20`
-  - Botão Secundário / Links de Redes: `bg-[#1a1829] border border-[#27253d] text-[#f0efff] hover:border-[#fe428e] hover:text-[#fe428e] transition-all`
-  - Badges de tecnologias: `bg-[#00e8c6]/10 text-[#00e8c6] border border-[#00e8c6]/20 text-xs px-2.5 py-1 rounded-full`
+## 5. Diretrizes de Design & Paleta (Modern Dark / Slate-Indigo)
+- **Fundo da página:** `bg-[#191919]`
+- **Cards e contêineres:** `bg-[#222222] border border-[#333333]`
+- **Tipografia:** Fonte Montserrat. Títulos em `text-[#F8F8F8] font-bold`, textos de apoio em `text-[#A0A0A0] leading-relaxed`.
+- **Botões Primários (CTA):** `bg-[#6D83F2] text-white hover:bg-[#586ee0] transition-all duration-200 active:scale-95 shadow-md shadow-[#6D83F2]/20`
+- **Botões Secundários / Redes:** `bg-[#222222] border border-[#333333] text-[#F8F8F8] hover:border-[#6D83F2] hover:text-[#6D83F2] transition-all duration-200`
+- **Badges de Tecnologias:** `bg-[#6D83F2]/10 text-[#6D83F2] border border-[#6D83F2]/20 text-xs px-2.5 py-1 rounded-full font-medium`

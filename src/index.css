@@ -1,20 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --bg-main: #141321;
-    --bg-card: #1a1829;
-    --border-subtle: #27253d;
-    --text-primary: #f0efff;
-    --text-muted: #a9a6c6;
-    --accent-pink: #fe428e;
-    --accent-cyan: #00e8c6;
-    --accent-yellow: #f8d847;
+    --color-bg: #191919;
+    --color-card: #222222;
+    --color-border: #333333;
+    --color-text: #F8F8F8;
+    --color-muted: #A0A0A0;
+    --color-primary: #6D83F2;
   }
 
   body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Montserrat', sans-serif;
   }
 }

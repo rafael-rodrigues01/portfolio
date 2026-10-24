@@ -12,19 +12,19 @@ export const HeroSection: React.FC = () => {
     >
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="space-y-3">
-          <p className="text-sm font-medium tracking-widest text-[#fe428e] uppercase">
+          <p className="text-sm font-medium tracking-widest text-[#6D83F2] uppercase">
             Olá, meu nome é
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-[#f0efff] sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-[#F8F8F8] sm:text-5xl md:text-6xl">
             {name}
           </h1>
         </div>
 
-        <p className="text-xl font-medium tracking-tight text-[#00e8c6] sm:text-2xl md:text-3xl">
+        <p className="text-xl font-medium tracking-tight text-[#6D83F2] sm:text-2xl md:text-3xl">
           {role}
         </p>
 
-        <p className="mx-auto max-w-2xl text-base text-[#a9a6c6] leading-relaxed sm:text-lg">
+        <p className="mx-auto max-w-2xl text-base text-[#A0A0A0] leading-relaxed sm:text-lg">
           {bio}
         </p>
 
@@ -32,13 +32,13 @@ export const HeroSection: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
           <a
             href="#projects"
-            className="inline-flex items-center justify-center rounded-lg bg-[#fe428e] px-6 py-3 text-base font-medium text-white shadow-md shadow-[#fe428e]/20 transition-all duration-200 hover:bg-[#e03178] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg bg-[#6D83F2] px-6 py-3 text-base font-semibold text-white shadow-md shadow-[#6D83F2]/20 transition-all duration-200 hover:bg-[#586ee0] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             Ver Projetos
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] px-6 py-3 text-base font-medium text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg border border-[#333333] bg-[#222222] px-6 py-3 text-base font-medium text-[#F8F8F8] transition-all duration-200 hover:border-[#6D83F2] hover:text-[#6D83F2] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             Contato
           </a>
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Perfil do GitHub"
-            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg border border-[#333333] bg-[#222222] p-3 text-[#F8F8F8] transition-all duration-200 hover:border-[#6D83F2] hover:text-[#6D83F2] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             <svg
               className="h-5 w-5 fill-current"
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Perfil do LinkedIn"
-            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg border border-[#333333] bg-[#222222] p-3 text-[#F8F8F8] transition-all duration-200 hover:border-[#6D83F2] hover:text-[#6D83F2] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             <svg
               className="h-5 w-5 fill-current"
@@ -85,7 +85,7 @@ export const HeroSection: React.FC = () => {
           <a
             href={`mailto:${socialLinks.email}`}
             aria-label="Enviar e-mail"
-            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
+            className="inline-flex items-center justify-center rounded-lg border border-[#333333] bg-[#222222] p-3 text-[#F8F8F8] transition-all duration-200 hover:border-[#6D83F2] hover:text-[#6D83F2] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D83F2]"
           >
             <svg
               className="h-5 w-5"
