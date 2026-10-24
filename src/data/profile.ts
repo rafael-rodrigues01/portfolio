@@ -10,6 +10,20 @@ export const profileData: ProfileInfo = {
     linkedin: 'https://www.linkedin.com/in/rafaelrodriguesdev/',
     email: 'rahrodrigues.dev@gmail.com',
   },
+  aboutBio: 'Desenvolvedor focado na construção de interfaces modernas, arquiteturas resilientes e código limpo. Experiência prática no desenvolvimento de soluções completas, aplicando rigor de engenharia, acessibilidade e performance em cada entrega.',
+  skills: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Node.js',
+    'Next.js',
+    'Vite',
+    'Vitest',
+    'Git',
+    'Python',
+    'Docker',
+    'PostgreSQL',
+  ],
 }
 
 export const projectsData: Project[] = [
@@ -23,3 +37,4 @@ export const projectsData: Project[] = [
     featured: true,
   },
 ]
+

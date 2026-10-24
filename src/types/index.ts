@@ -12,6 +12,8 @@ export interface ProfileInfo {
   name: string
   role: string
   bio: string
+  aboutBio: string
+  skills: string[]
   location: string
   socialLinks: {
     github: string

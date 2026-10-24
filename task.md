@@ -1,7 +1,27 @@
-Consulte as diretrizes de design atualizadas no AGENTS.md com a paleta do tema Radical (#141321, #fe428e, #a9a6c6, #00e8c6).
+Os testes da Spec 02 falharam pelo motivo correto (fase RED concluída). Agora vamos para a fase GREEN:
 
-Refatore o visual de src/sections/HeroSection.tsx aplicando essa identidade estética (fundo escuro azulado, título em #f0efff, links e botões usando #fe428e e detalhes/bordas em #27253d).
+Consulte specs/02-about-section.md e as diretrizes do AGENTS.md.
 
-Mantenha os textos, estrutura de dados e atributos de acessibilidade (aria-label, tags semânticas) idênticos.
+Crie o componente src/sections/AboutSection.tsx implementando:
 
-Execute npm test -- --run para garantir que 100% dos testes continuem verdes.
+Tag <section id="about" aria-label="Sobre Mim">.
+
+Heading <h2> com o título "Sobre Mim".
+
+Parágrafo(s) consumindo profileData.aboutBio.
+
+Heading <h3> para a seção de habilidades (ex.: "Tecnologias & Ferramentas").
+
+Lista semântica (<ul> e <li>) iterando sobre profileData.skills com badges estilizadas.
+
+Aplique a paleta Radical:
+
+Card container: bg-[#1a1829] border border-[#27253d] rounded-xl p-6 md:p-8.
+
+Títulos em #f0efff e corpo de texto em #a9a6c6.
+
+Badges de skills em bg-[#00e8c6]/10 text-[#00e8c6] border border-[#00e8c6]/20.
+
+Execute npm test -- --run para garantir que tanto os testes da Spec 01 quanto da Spec 02 passem 100% em verde.
+
+Atualize o cabeçalho de specs/02-about-section.md para **Status:** Concluído (Testes passando).
