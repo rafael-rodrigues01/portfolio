@@ -29,12 +29,28 @@ export const profileData: ProfileInfo = {
 export const projectsData: Project[] = [
   {
     id: '1',
-    title: 'Projeto 1',
-    description: 'Breve descrição técnica do problema e solução do projeto 1.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/seu-usuario/projeto-1',
-    liveUrl: 'https://projeto1.dev',
+    title: 'Plataforma de Monitoramento de Métricas',
+    description: 'Dashboard interativo para visualização em tempo real de telemetria e métricas de infraestrutura, com arquitetura reativa e cache otimizado.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
+    githubUrl: 'https://github.com/rafael-rodrigues01/metrics-dashboard',
+    liveUrl: 'https://metrics-dashboard.dev',
     featured: true,
   },
+  {
+    id: '2',
+    title: 'Design System & Component Library',
+    description: 'Biblioteca de componentes atômicos com conformidade estrita de acessibilidade (WCAG 2.1 AA), suporte a temas dinâmicos e testes automatizados.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vitest'],
+    githubUrl: 'https://github.com/rafael-rodrigues01/radical-ui',
+    liveUrl: 'https://radical-ui.dev',
+    featured: true,
+  },
+  {
+    id: '3',
+    title: 'API de Gestão de Microsserviços',
+    description: 'API escalável e resiliente construída para orquestração assíncrona de eventos, validação com tipagem estrita e persistência relacional.',
+    tags: ['Node.js', 'TypeScript', 'PostgreSQL', 'Docker'],
+    githubUrl: 'https://github.com/rafael-rodrigues01/service-manager-api',
+    featured: false,
+  },
 ]
-
