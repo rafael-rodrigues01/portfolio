@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Navbar: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#191919]/80 border-b border-[#333333] transition-all">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#222222]/80 border-b border-[#333333] transition-all">
       <nav
         aria-label="Navegação principal"
         className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-end"
