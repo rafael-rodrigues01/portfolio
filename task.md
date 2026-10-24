@@ -1,13 +1,7 @@
-Os testes falharam conforme esperado na fase RED do TDD. Agora vamos para a fase GREEN:
+Consulte as diretrizes de design atualizadas no AGENTS.md com a paleta do tema Radical (#141321, #fe428e, #a9a6c6, #00e8c6).
 
-Consulte a spec specs/01-hero-section.md e crie o componente em src/sections/HeroSection.tsx.
+Refatore o visual de src/sections/HeroSection.tsx aplicando essa identidade estética (fundo escuro azulado, título em #f0efff, links e botões usando #fe428e e detalhes/bordas em #27253d).
 
-Consuma os dados de src/data/profile.ts sem valores chumbados no JSX.
+Mantenha os textos, estrutura de dados e atributos de acessibilidade (aria-label, tags semânticas) idênticos.
 
-Aplique estilos modernos e responsivos com Tailwind CSS.
-
-Respeite todas as regras de acessibilidade (a11y) descritas na spec.
-
-Execute novamente npm test -- --run para garantir que 100% dos testes passem em verde.
-
-Ao final, atualize o status da spec em specs/01-hero-section.md para Status: Concluído (Testes passando).
+Execute npm test -- --run para garantir que 100% dos testes continuem verdes.

@@ -8,23 +8,23 @@ export const HeroSection: React.FC = () => {
     <section
       id="hero"
       aria-label="Apresentação Principal"
-      className="flex min-h-[70vh] flex-col items-center justify-center px-4 py-16 text-center sm:px-6 lg:px-8"
+      className="flex min-h-[85vh] flex-col items-center justify-center py-20 px-6 text-center md:py-28"
     >
-      <div className="max-w-3xl space-y-6">
-        <div className="space-y-2">
-          <p className="text-sm font-semibold tracking-wider text-indigo-500 uppercase">
+      <div className="max-w-4xl mx-auto space-y-8">
+        <div className="space-y-3">
+          <p className="text-sm font-medium tracking-widest text-[#fe428e] uppercase">
             Olá, meu nome é
           </p>
-          <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl md:text-6xl dark:text-zinc-50">
+          <h1 className="text-4xl font-bold tracking-tight text-[#f0efff] sm:text-5xl md:text-6xl">
             {name}
           </h1>
         </div>
 
-        <p className="text-xl font-medium text-zinc-700 sm:text-2xl dark:text-zinc-300">
+        <p className="text-xl font-medium tracking-tight text-[#00e8c6] sm:text-2xl md:text-3xl">
           {role}
         </p>
 
-        <p className="mx-auto max-w-2xl text-base text-zinc-600 sm:text-lg dark:text-zinc-400">
+        <p className="mx-auto max-w-2xl text-base text-[#a9a6c6] leading-relaxed sm:text-lg">
           {bio}
         </p>
 
@@ -32,29 +32,29 @@ export const HeroSection: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
           <a
             href="#projects"
-            className="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="inline-flex items-center justify-center rounded-lg bg-[#fe428e] px-6 py-3 text-base font-medium text-white shadow-md shadow-[#fe428e]/20 transition-all duration-200 hover:bg-[#e03178] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
           >
             Ver Projetos
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center rounded-lg border border-zinc-300 bg-transparent px-6 py-3 text-base font-semibold text-zinc-800 transition-colors hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] px-6 py-3 text-base font-medium text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
           >
             Contato
           </a>
         </div>
 
         {/* Links Sociais */}
-        <div className="flex items-center justify-center gap-6 pt-6">
+        <div className="flex items-center justify-center gap-4 pt-4">
           <a
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Perfil do GitHub"
-            className="text-zinc-600 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
+            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
           >
             <svg
-              className="h-6 w-6 fill-current"
+              className="h-5 w-5 fill-current"
               viewBox="0 0 24 24"
               role="img"
               aria-hidden="true"
@@ -69,10 +69,10 @@ export const HeroSection: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Perfil do LinkedIn"
-            className="text-zinc-600 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
+            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
           >
             <svg
-              className="h-6 w-6 fill-current"
+              className="h-5 w-5 fill-current"
               viewBox="0 0 24 24"
               role="img"
               aria-hidden="true"
@@ -85,10 +85,10 @@ export const HeroSection: React.FC = () => {
           <a
             href={`mailto:${socialLinks.email}`}
             aria-label="Enviar e-mail"
-            className="text-zinc-600 transition-colors hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400"
+            className="inline-flex items-center justify-center rounded-lg border border-[#27253d] bg-[#1a1829] p-3 text-[#f0efff] transition-all duration-200 hover:border-[#fe428e] hover:text-[#fe428e] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe428e]"
           >
             <svg
-              className="h-6 w-6"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"

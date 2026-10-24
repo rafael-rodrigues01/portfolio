@@ -2,12 +2,14 @@
 
 @layer base {
   :root {
-    --bg-main: #09090b;       /* zinc-950: fundo principal sofisticado */
-    --bg-card: #18181b;       /* zinc-900: cards e blocos */
-    --border-color: #27272a;  /* zinc-800: bordas elegantes e sutis */
-    --text-primary: #fafafa;  /* zinc-50: texto de alto contraste */
-    --text-muted: #a1a1aa;    /* zinc-400: subtítulos e detalhes */
-    --accent: #3b82f6;        /* azul elétrico / ou #10b981 esmeralda para CTAs */
+    --bg-main: #141321;
+    --bg-card: #1a1829;
+    --border-subtle: #27253d;
+    --text-primary: #f0efff;
+    --text-muted: #a9a6c6;
+    --accent-pink: #fe428e;
+    --accent-cyan: #00e8c6;
+    --accent-yellow: #f8d847;
   }
 
   body {

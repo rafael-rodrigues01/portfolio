@@ -32,15 +32,13 @@ src/
 5. **Acessibilidade (a11y):** Botões, links externos e formulários devem conter tags semânticas e atributos `aria-*` adequados.
 6. **Spec-Driven Development (SDD):** Toda implementação deve ser precedida por uma especificação técnica aprovada na pasta `specs/`. O agente deve ler a spec correspondente antes de gerar testes e código, tratando os "Critérios de Aceite" como a definição estrita de conclusão.
 
-## 5. Diretrizes de Design & UI
-- **Tema:** Dark mode elegante com paleta neutra (zinc-950 para background, zinc-900 para containers/cards, bordas finas em zinc-800).
+## 5. Diretrizes de Design & Paleta (Tema Radical / Anurag Hazra)
+- **Fundo da página:** `bg-[#141321]`
+- **Cards e contêineres:** `bg-[#1a1829] border border-[#27253d]`
 - **Tipografia:** 
-  - Títulos (`h1`, `h2`): `tracking-tight font-bold text-zinc-100`.
-  - Corpo / Subtítulos: `text-zinc-400 leading-relaxed`.
-- **Botões & Interatividade:** 
-  - Botão primário: fundo de destaque com hover suave (`transition-all duration-200 active:scale-95`).
-  - Botão secundário / links de redes: `bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-zinc-100 hover:border-zinc-700`.
-- **Espaçamento & Layout:**
-  - Container principal com largura máxima controlada: `max-w-4xl mx-auto px-6`.
-  - Seções com respiro generoso (`py-20 md:py-28`).
-- **Proibido:** Gradientes chamativos antiquados, sombras pesadas e botões sem estado de hover/foco.
+  - Títulos: `text-[#f0efff] font-bold tracking-tight`
+  - Textos de apoio / bio: `text-[#a9a6c6] leading-relaxed`
+- **Acentos e Botões:**
+  - Botão Primário (CTA): `bg-[#fe428e] text-white hover:bg-[#e03178] font-medium shadow-md shadow-[#fe428e]/20`
+  - Botão Secundário / Links de Redes: `bg-[#1a1829] border border-[#27253d] text-[#f0efff] hover:border-[#fe428e] hover:text-[#fe428e] transition-all`
+  - Badges de tecnologias: `bg-[#00e8c6]/10 text-[#00e8c6] border border-[#00e8c6]/20 text-xs px-2.5 py-1 rounded-full`
