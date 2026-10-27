@@ -70,4 +70,13 @@ describe('HeroSection', () => {
       expect(emailLink).toHaveAttribute('href', `mailto:${profileData.socialLinks.email}`)
     })
   })
+
+  describe('4. Integração do CodeCard', () => {
+    it('deve renderizar o componente CodeCard na seção Hero com seus elementos característicos', () => {
+      render(<HeroSection />)
+
+      expect(screen.getByText('portfolio.tsx')).toBeInTheDocument()
+      expect(screen.getByText('ready to build')).toBeInTheDocument()
+    })
+  })
 })

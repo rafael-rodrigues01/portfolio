@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-bg: #191919;
-    --color-card: #222222;
-    --color-border: #333333;
-    --color-text: #F8F8F8;
-    --color-muted: #A0A0A0;
-    --color-primary: #6D83F2;
-  }
+@theme {
+  --color-bg: #191919;
+  --color-card: #222222;
+  --color-border: #333333;
+  --color-text: #F8F8F8;
+  --color-muted: #A0A0A0;
+  --color-primary: #6D83F2;
+}
 
+@layer base {
   body {
     background-color: var(--color-bg);
     color: var(--color-text);
