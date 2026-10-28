@@ -29,8 +29,7 @@ coverage
 .nyc_output
 
 # Configurações de editores e SO
-.vscode/*
-!.vscode/extensions.json
+.vscode/
 .idea
 *.suo
 *.ntvs*
